@@ -10,6 +10,8 @@ COPY Gemfile Gemfile.lock /sample_rails/
 # bundle installを実行
 RUN bundle install
 
+# RUN ./bin/importmap pin "vue/dist/vue.esm-browser.js" --download
+
 # ホストのファイルをコンテナ内の作業ディレクトリにコピー
 COPY . /sample_rails/
 
